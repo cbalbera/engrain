@@ -1,0 +1,442 @@
+/* general elements */
+body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size:1rem;
+    font-weight:400;
+    line-height:1.5;
+    color:#212529;
+    text-align:left;
+    background-color:#fff
+}
+
+.btn{
+    display:inline-block;
+    font-weight:400;
+    color:#212529;
+    text-align:center;
+    vertical-align:middle;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    background-color:transparent;
+    border:1px solid transparent;
+    padding:.375rem .75rem;
+    font-size:0.5rem;
+    line-height:1.5;
+    border-radius:.15rem;
+    transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-decoration: none
+}
+
+.btn-primary{
+    color:#fff;
+    background-color:#007bff;
+    border-color:#007bff
+}
+
+
+.page-wrap{
+    color:#f7f8fa;
+    height: 15000px;
+    z-index:-10;
+}
+
+.box-white-section-background{
+    background-color: #fff;
+    z-index:-1;
+    width: 80%;
+    height: 95%;
+    position:absolute;
+    left:40px;
+}
+
+.text-box-blue-section-head{
+    position:absolute;
+    top:40px;
+    width: 275px;
+    color:#007bff;
+    font-size: 0.35em;
+    z-index:2;
+}
+
+.text-box-section-head{
+    position:absolute;
+    top:15px;
+    color:#000000;
+    font-size: 3.5em;
+    font-weight: bold;
+    z-index:3;
+}
+
+.text-box-section-body{
+    position:relative;
+    top:85px;
+    color:#696b6e;
+    font-size: 1em;
+    z-index:4;
+}
+
+ul{
+    position:relative;
+    display:flex;
+    line-height: 2em;
+    padding: 2px 1px 1px 2px;
+    vertical-align:middle;
+}
+ul:nth-child(3n+1)::before {
+    content:url('../images/bullet_point_camera.png');
+    vertical-align:middle;
+    padding-right:5px;
+}
+
+ul:not(:nth-child(3n+1))::before {
+    content:url('../images/bullet_point_std.png');
+    vertical-align:middle;
+    padding-right:5px;
+}
+
+figure{
+    display:flex;
+    text-align:center;
+    text-indent:0;
+}
+
+figure figcaption{
+    position:relative;
+    display:table-caption;
+    color:#696b6e;
+    font-size: 0.55em;
+    z-index:4;
+    font-style:italic;
+    caption-side:bottom;
+    justify-content: center;
+    align-items:center;
+    width:200px;
+}
+
+form{
+    position: relative;
+    display:flex;
+}
+
+label{
+    position:relative;
+    justify-content: space-around;
+    flex-basis:0;
+    flex-grow:1;
+}
+
+input{
+    position:relative;
+    justify-content: space-around;
+    flex-basis:0;
+    flex-grow:1;
+}
+
+p{
+    position:relative;
+    display:flex;
+}
+
+.fullpage {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: #212529;
+  }
+
+.separator{
+    background-color:#007bff;
+    position: relative;
+    height: 2px;
+    z-index:0;
+}
+
+/* top section */
+
+.top-header{
+    display:flex;
+    align-items: center;
+    color:#fff;
+    height: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.logo-box{
+    order:1;
+    flex: 4;
+    align-items:left;
+    height:80%;
+    gap:450px;
+}
+
+.img-logo-top{
+    height:100%;
+}
+
+.nav-element{
+    order:3;
+    color:#9c9d9f;
+    font-size: 0.5em;
+    height: 10%;
+    flex:1;
+}
+
+.btn-top-box{
+    order:4;
+    flex:1;
+    align-items: center;
+}
+
+.top-line-separator{
+    color:#edeff2;
+}
+
+/* top-middle section */
+
+.top-middle-section{
+    position:relative;
+    height: 700px;
+    z-index:-1;
+}
+
+.img-top-mid{
+    position:absolute;
+    top:25px;
+    left:100px;
+    height:80%;
+    width:80%;
+    z-index:1;
+}
+
+.box-top-mid{
+    position:absolute;
+    top:130px;
+    left:75px;
+    width: 20%;
+    height: 25%;
+    box-shadow:-5px 5px 5px #888888;
+    background-color:#fff;
+    border-radius:2px;
+    z-index:2;
+}
+
+.box-top-mid-text{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.box-top-mid-header{
+    padding-top: 30px;
+    font-size:0.75em;
+    color: #000000;
+}
+
+.box-top-mid-main{
+    font-size: 0.5em;
+    color: #9c9d9f;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.top-mid-line-separator{
+    top: 500px;
+}
+
+/* overview section */
+
+.overview-section{
+    position:relative;
+    height:375px;
+    display:flex;
+    align-items: center;
+}
+
+.box-overview{
+    align-items: left;
+}
+
+.img-overview{
+    position:absolute;
+    top: 25px;
+    left: 25px;
+    height:75%;
+    width:60%;
+    z-index:1;
+}
+
+.right-text-box-overview{
+    left:635px;
+}
+
+/* floor plan options section */
+.floor-plan-options-section{
+    position:relative;
+    height:100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-text-box-floor-plan{
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    color:#000000;
+    font-size: 0.4em;
+    display:flex;
+    height: 10%;
+}
+
+.middle-text-box-floor-plan-wrapper{
+    height: 20%;
+    width: 100%;
+    position:relative;
+    align-items: center;
+    justify-content: space-evenly;
+    display:inline-flex;
+}
+
+.middle-text-box-floor-plan-outer{
+    display:inline-flex;
+    position:relative;
+    flex-direction: row;
+    height: 20%;
+}
+
+.middle-text-box-floor-plan-inner{
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    color:#000000;
+    width: 100px;
+}
+
+.floor-plan-large-font{
+    display:flex;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.floor-plan-small-font{
+    display:flex;
+    font-size: 0.4em;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Amenities section */
+
+.section-amenitites{
+    height: 2000px;
+}
+
+.left-text-box-amenities{
+    left:40px;
+}
+
+.img-amenities{
+    position:absolute;
+    left:325px;
+    height:40%;
+    width:55%;
+    z-index:1;
+}
+
+.img-amenities-top{
+    top: 25px;
+    z-index:10;
+}
+
+.img-amenities-bottom{
+    top: 300px;
+    z-index:10;
+}
+
+.text-box-figure-caption{
+    top:245px;
+    left:450px;
+}
+
+/* neighborhood section */
+
+.section-neighborhood{
+    display:flex;
+    position:relative;
+    top: 550px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index:-1;
+    height: 300px;
+}
+
+.text-box-neighborhood{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-large-logo{
+    display:flex;
+    position:relative;
+    top: 450px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-image{
+    z-index:1;
+}
+
+.bottom-separator{
+    top: 350px;
+}
+
+/* bottom section */
+
+.section-bottom{
+    background-color:#000000;
+    position:relative;
+    top: 339px;
+    z-index:-1;
+    height: 600px;
+}
+
+.text-box-bottom-header{
+    color:#fff;
+    position:relative;
+    top:150px;
+    text-align:center;
+}
+
+.break{
+    flex-basis:100%;
+    height:0;
+}
+
+.form-bottom{
+    position:relative;
+    top:180px;
+}
+
+.thankyou-box-bottom{
+    border-color:#edeff2;
+    height:80px;
+    width:60px;
+    top:200px;
+    left:400px;
+}
